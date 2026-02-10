@@ -22,13 +22,12 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-<<<<<<< HEAD
     public Product edit(Product detail, String id) {
         return productRepository.edit(detail, id);
-=======
+    }
+
     public Product delete(String id) {
         return productRepository.delete(id);
->>>>>>> delete-product
     }
 
     @Override
@@ -36,10 +35,6 @@ public class ProductServiceImpl implements ProductService {
         return productRepository.getProduct(id);
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> delete-product
     @Override
     public List<Product> findAll() {
         Iterator<Product> productIterator = productRepository.findAll();

@@ -23,11 +23,8 @@
         <tr th:each="product: ${products}">
             <td th:text="${product.productName}"></td>
             <td th:text="${product.productQuantity}"></td>
-<<<<<<< HEAD
-            <td><a th:href="@{/product/edit/{id}(id=${product.productId})}" class="btn btn-primary btn-sm mb-3" style="width: 50%;">Edit</a></td>
-=======
-            <td><a th:href="@{/product/delete/{id}(id=${product.productId})}" class="btn btn-primary btn-sm mb-3" style="width: 50%; background-color: darkred;">Delete</a></td>
->>>>>>> delete-product
+            <td><a th:href="@{/product/edit/{id}(id=${product.productId})}" class="btn btn-primary btn-sm mb-3" style="width: 50%;">Edit</a>
+                <a th:href="@{/product/delete/{id}(id=${product.productId})}" class="btn btn-primary btn-sm mb-3" style="width: 50%; background-color: darkred;">Delete</a></td>
         </tr>
         </tbody>
     </table>
