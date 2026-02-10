@@ -17,11 +17,18 @@ public class ProductRepository {
         return product;
     }
 
+<<<<<<< HEAD
     public Product edit(Product detail, String id) {
         Product product = getProduct(id);
         product.setProductName(detail.getProductName());
         product.setProductQuantity(detail.getProductQuantity());
         return detail;
+=======
+    public Product delete(String id) {
+        Product product = getProduct(id);
+        productData.remove(product);
+        return product;
+>>>>>>> delete-product
     }
 
     public Product getProduct(String id) {
