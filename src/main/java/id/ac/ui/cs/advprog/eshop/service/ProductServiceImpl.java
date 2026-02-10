@@ -21,10 +21,12 @@ public class ProductServiceImpl implements ProductService {
         return product;
     }
 
+    @Override
     public Product edit(Product detail, String id) {
         return productRepository.edit(detail, id);
     }
 
+    @Override
     public Product getProduct(String id) {
         return productRepository.getProduct(id);
     }
