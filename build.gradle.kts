@@ -54,7 +54,7 @@ tasks.register<Test>("unitTest") {
     }
 }
 
-tasls.register<Test>("functionalTest)") {
+tasks.register<Test>("functionalTest)") {
     description = "Runs functional tests."
     group = "verification"
 
